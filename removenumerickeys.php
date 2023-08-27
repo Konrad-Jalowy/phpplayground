@@ -24,8 +24,29 @@
 
     $arr2 = removeNumericKeys($arr);
     foreach($arr2 as $key => $val) {
-        echo "Key: $key Val: $val <br>";
+        echo
+         "Key: $key Val: $val <br>";
     }
+
+    function removeNumericKeys2($arr) {
+        $keys = array_keys($arr);
+        $output = [];
+        foreach($keys as $key){
+            if(!is_numeric($key))
+            {
+                $output[$key] = $arr[$key];
+            }
+        }
+        return $output;
+    }
+
+    $arr3 = removeNumericKeys2($arr);
+    foreach($arr3 as $key => $val) {
+        echo
+         "Key: $key Val: $val <br>";
+    }
+
+    
     ?>
 </body>
 </html>
