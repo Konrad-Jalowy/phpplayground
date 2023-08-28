@@ -76,3 +76,14 @@ echo str_pad($input, 10, "_", STR_PAD_BOTH);   // produces "__Alien___"
 echo str_pad($input,  6, "___");               // produces "Alien_"
 echo str_pad($input,  3, "*");                 // produces "Alien"
 ```
+### wordwrap()
+**Self descriptive**
+```php
+$text = "The quick brown fox jumped over the lazy dog.";
+$newtext = wordwrap($text, 20, "<br />\n");
+
+echo $newtext;
+//The quick brown fox<br />
+//jumped over the lazy<br />
+//dog.
+```
