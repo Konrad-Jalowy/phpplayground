@@ -19,4 +19,12 @@ class EmailAddr {
      {
         return filter_var($this->email, FILTER_VALIDATE_EMAIL);
      }
+
+     public function getName() {
+        return strstr($this->email, '@', true);
+     }
+
+     public function getDomain() {
+        return strstr($this->email, '@');
+     }
 }
