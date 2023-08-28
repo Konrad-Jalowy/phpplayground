@@ -89,7 +89,7 @@ echo $newtext;
 ```
 ### trim()
 ### ltrim()
-### rtrim()
+### rtrim() // chop()
 **Self-descriptive**
 ### str_replace($search, $replace, $subject);
 ### str_ireplace($search, $replace, $subject);
