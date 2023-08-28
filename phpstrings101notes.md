@@ -1,8 +1,8 @@
-## PHP Strings Basics
+# PHP Strings Basics
 
-### Built-in functions
+## Built-in functions
 
-#### lcfirst($str)
+### lcfirst($str)
 **Makes first letter lowercase**
 ```php
 $foo = 'HelloWorld';
