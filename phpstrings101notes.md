@@ -106,6 +106,14 @@ $route = preg_replace('/\{([a-z]+):([^\}]+)\}/', '(?P<\1>\2)', $route);
 echo $route; //(?P\d)
 ```
 
+### strpbrk($string, $char)
+**Breaks from given character till the end**
+```php
+$url = "https://www.google.pl/search?q=hello+world";
+echo "$url<br>";
+echo strpbrk($url, "?"); //?q=hello+world
+```
+
 ## Custom functions
 ### toCamelCase()
 ```php
