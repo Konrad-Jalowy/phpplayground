@@ -87,3 +87,7 @@ echo $newtext;
 //jumped over the lazy<br />
 //dog.
 ```
+### trim()
+### ltrim()
+### rtrim()
+**Self-descriptive**
