@@ -32,3 +32,10 @@ $baz = ucwords($foo, "|");        // Hello|World!
 ```php
 echo strrev("Hello world!"); // outputs "!dlrow olleH"
 ```
+### implode($separator, $array)
+**Joins array into string**
+```php
+$array = ['lastname', 'email', 'phone'];
+var_dump(implode(",", $array)); // string(20) "lastname,email,phone"
+var_dump(implode(['a', 'b', 'c'])); // string(3) "abc"
+```
