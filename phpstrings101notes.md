@@ -39,3 +39,15 @@ $array = ['lastname', 'email', 'phone'];
 var_dump(implode(",", $array)); // string(20) "lastname,email,phone"
 var_dump(implode(['a', 'b', 'c'])); // string(3) "abc"
 ```
+### explode(string $separator, string $string, int $limit = PHP_INT_MAX): array
+**String to array split**
+```php
+$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+$pieces = explode(" ", $pizza);
+```
+```php
+$data = "foo:*:1023:1000::/home/foo:/bin/sh";
+list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
+echo $user; // foo
+echo $pass; // *
+```
