@@ -14,4 +14,9 @@ class EmailAddr {
      public function getEmail(){
         return $this->email;
      }
+    
+     public function isValid()
+     {
+        return filter_var($this->email, FILTER_VALIDATE_EMAIL);
+     }
 }
