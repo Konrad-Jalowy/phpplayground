@@ -98,6 +98,18 @@ echo $newtext;
 $bodytag = str_ireplace("%body%", "black", "<body text=%BODY%>");
 echo $bodytag; // <body text=black>
 ```
+### preg_replace()
+**Self-descriptive**
+```php
+$route = "{controller}";
+$route = preg_replace('/\{([a-z]+)\}/', '(?P<\1>[a-z-]+)', $route);
+echo $route; //controller
+```
+```php
+$route = "{id:\d}";
+$route = preg_replace('/\{([a-z]+):([^\}]+)\}/', '(?P<\1>\2)', $route);
+echo $route; //id\d
+```
 
 ## Custom functions
 ### toCamelCase()
