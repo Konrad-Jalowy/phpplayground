@@ -60,3 +60,9 @@ echo strlen($str); // 6
 $str = ' ab cd ';
 echo strlen($str); // 7
 ```
+### str_repeat(string $string, int $times): string
+**Returns string repeated times**
+```php
+echo str_repeat("-=", 10);
+//-=-=-=-=-=-=-=-=-=-=
+```
