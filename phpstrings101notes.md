@@ -66,3 +66,13 @@ echo strlen($str); // 7
 echo str_repeat("-=", 10);
 //-=-=-=-=-=-=-=-=-=-=
 ```
+### str_pad()
+**Self descriptive**
+```php
+$input = "Alien";
+echo str_pad($input, 10);                      // produces "Alien     "
+echo str_pad($input, 10, "-=", STR_PAD_LEFT);  // produces "-=-=-Alien"
+echo str_pad($input, 10, "_", STR_PAD_BOTH);   // produces "__Alien___"
+echo str_pad($input,  6, "___");               // produces "Alien_"
+echo str_pad($input,  3, "*");                 // produces "Alien"
+```
