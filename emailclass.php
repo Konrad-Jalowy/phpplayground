@@ -17,7 +17,7 @@ class EmailAddr {
     
      public function isValid()
      {
-        return filter_var($this->email, FILTER_VALIDATE_EMAIL);
+        return (bool)filter_var($this->email, FILTER_VALIDATE_EMAIL);
      }
 
      public function getName() {
@@ -33,3 +33,15 @@ class EmailAddr {
         return strrchr($this->email, '.');
      }
 }
+
+$email = new EmailAddr('name@example.com');
+echo $email->isValid(); //1
+echo "<br>";
+echo $email->getEmail(); //name@example.com
+echo "<br>";
+echo $email->getName(); //name
+echo "<br>";
+echo $email->getDomain(); //@example.com
+echo "<br>";
+echo $email->getLastDomainPart(); //.com
+echo "<br>";
