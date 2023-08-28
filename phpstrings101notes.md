@@ -51,3 +51,12 @@ list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
 echo $user; // foo
 echo $pass; // *
 ```
+### strlen(string $string): int
+**Returns length of a string**
+```php
+$str = 'abcdef';
+echo strlen($str); // 6
+
+$str = ' ab cd ';
+echo strlen($str); // 7
+```
