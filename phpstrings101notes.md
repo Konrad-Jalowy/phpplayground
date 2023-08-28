@@ -114,6 +114,18 @@ echo "$url<br>";
 echo strpbrk($url, "?"); //?q=hello+world
 ```
 
+### strstr(string $haystack, string $needle, bool $before_needle = false): string|false
+### strchr
+**Returns part of haystack string starting from and including the first occurrence of needle to the end of haystack.**
+```php
+$email  = 'name@example.com';
+$domain = strstr($email, '@');
+echo $domain; // prints @example.com
+
+$user = strstr($email, '@', true);
+echo $user; // prints name
+```
+
 ## Custom functions
 ### toCamelCase()
 ```php
