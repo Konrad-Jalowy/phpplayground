@@ -92,4 +92,9 @@ echo $newtext;
 ### rtrim()
 **Self-descriptive**
 ### str_replace($search, $replace, $subject);
+### str_ireplace($search, $replace, $subject);
 **Replace search in subject**
+```php
+$bodytag = str_ireplace("%body%", "black", "<body text=%BODY%>");
+echo $bodytag; // <body text=black>
+```
