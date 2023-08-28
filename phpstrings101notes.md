@@ -91,3 +91,5 @@ echo $newtext;
 ### ltrim()
 ### rtrim()
 **Self-descriptive**
+### str_replace($search, $replace, $subject);
+**Replace search in subject**
