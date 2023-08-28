@@ -27,4 +27,9 @@ class EmailAddr {
      public function getDomain() {
         return strstr($this->email, '@');
      }
+
+     public function getLastDomainPart()
+     {
+        return strrchr($this->email, '.');
+     }
 }
