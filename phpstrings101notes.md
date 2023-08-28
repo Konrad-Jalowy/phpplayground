@@ -98,3 +98,14 @@ echo $newtext;
 $bodytag = str_ireplace("%body%", "black", "<body text=%BODY%>");
 echo $bodytag; // <body text=black>
 ```
+
+## Custom functions
+### toCamelCase()
+```php
+function toCamel($string) {
+        return lcfirst(str_replace(' ', '', ucwords(str_replace('-', ' ', $string))));
+    }
+
+    $myString = 'post-blog-tag';
+    echo toCamel($myString);
+```
