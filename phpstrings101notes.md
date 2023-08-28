@@ -27,3 +27,8 @@ $bar = ucwords($foo);             // Hello|world!
 
 $baz = ucwords($foo, "|");        // Hello|World!
 ```
+### strrev($str)
+**Reverses string**
+```php
+echo strrev("Hello world!"); // outputs "!dlrow olleH"
+```
