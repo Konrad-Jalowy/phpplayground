@@ -125,7 +125,8 @@ echo $domain; // prints @example.com
 $user = strstr($email, '@', true);
 echo $user; // prints name
 ```
-
+### strrchr(string $haystack, string $needle): string|false
+**This function returns the portion of haystack which starts at the last occurrence of needle and goes until the end of haystack.**
 ## Custom functions
 ### toCamelCase()
 ```php
