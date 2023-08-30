@@ -149,6 +149,35 @@ echo substr_count($text, 'is', 3);
 // the text is reduced to 's i', so it prints 0
 echo substr_count($text, 'is', 3, 3);
 ```
+### strcmp(string $string1, string $string2): int
+**Compare two strings, binary safe**
+### strcasecmp(string $string1, string $string2): int
+**Binary safe case-insensitive string comparison. The comparison is not locale aware; only ASCII letters are compared in a case-insensitive way.**
+```php
+$var1 = "Hello";
+$var2 = "hello";
+if (strcasecmp($var1, $var2) == 0) {
+    echo '$var1 is equal to $var2 in a case-insensitive string comparison';
+}
+```
+### strncmp(string $string1, string $string2, int $length): int
+**This function is similar to strcmp(), with the difference that you can specify the (upper limit of the) number of characters from each string to be used in the comparison.**
+```php
+$var1 = 'Hello John';
+$var2 = 'Hello Doe';
+if (strncmp($var1, $var2, 5) === 0) {
+    echo 'First 5 characters of $var1 and $var2 are equals in a case-sensitive string comparison';
+}
+```
+### strncasecmp(string $string1, string $string2, int $length): int
+**This function is similar to strcasecmp(), with the difference that you can specify the (upper limit of the) number of characters from each string to be used in the comparison.**
+```php
+$var1 = 'Hello John';
+$var2 = 'hello Doe';
+if (strncasecmp($var1, $var2, 5) === 0) {
+    echo 'First 5 characters of $var1 and $var2 are equals in a case-insensitive string comparison';
+}
+```
 ## Custom functions
 ### toCamelCase()
 ```php
