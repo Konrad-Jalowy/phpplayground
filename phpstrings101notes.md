@@ -193,6 +193,8 @@ if (str_starts_with('abc', '')) {
     echo "All strings start with the empty string";
 }
 ```
+### str_split(string $string, int $length = 1): array
+**str_split — Convert a string to an array**
 ## Custom functions
 ### toCamelCase()
 ```php
