@@ -186,6 +186,13 @@ if (strncasecmp($var1, $var2, 5) === 0) {
 **self-descriptive**
 ### nl2br(string $string, bool $use_xhtml = true): string
 **self-descriptive**
+### str_starts_with(string $haystack, string $needle): bool
+**Performs a case-sensitive check indicating if haystack begins with needle.**
+```php
+if (str_starts_with('abc', '')) {
+    echo "All strings start with the empty string";
+}
+```
 ## Custom functions
 ### toCamelCase()
 ```php
