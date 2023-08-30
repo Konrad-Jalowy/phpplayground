@@ -135,6 +135,20 @@ echo $user; // prints name
 $newstring = 'abcdef abcdef';
 $pos = strpos($newstring, 'a', 1); // $pos = 7, not 0
 ```
+### substr_count(string $haystack, string $needle, int $offset = 0, ?int $length = null):
+**substr_count() returns the number of times the needle substring occurs in the haystack string. Please note that needle is case sensitive.**
+```php
+$text = 'This is a test';
+echo strlen($text); // 14
+
+echo substr_count($text, 'is'); // 2
+
+// the string is reduced to 's is a test', so it prints 1
+echo substr_count($text, 'is', 3);
+
+// the text is reduced to 's i', so it prints 0
+echo substr_count($text, 'is', 3, 3);
+```
 ## Custom functions
 ### toCamelCase()
 ```php
