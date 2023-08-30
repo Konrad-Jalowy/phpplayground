@@ -195,6 +195,18 @@ if (str_starts_with('abc', '')) {
 ```
 ### str_split(string $string, int $length = 1): array
 **str_split — Convert a string to an array**
+### preg_split()
+**Split string by a regular expression**
+```php
+$keywords = preg_split("/[\s,]+/", "hypertext language, programming");
+print_r($keywords);
+// Array
+// (
+//     [0] => hypertext
+//     [1] => language
+//     [2] => programming
+// )
+```
 ## Custom functions
 ### toCamelCase()
 ```php
