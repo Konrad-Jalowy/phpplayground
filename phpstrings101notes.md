@@ -127,6 +127,14 @@ echo $user; // prints name
 ```
 ### strrchr(string $haystack, string $needle): string|false
 **This function returns the portion of haystack which starts at the last occurrence of needle and goes until the end of haystack.**
+
+### strpos(string $haystack, string $needle, int $offset = 0): int|false
+**Find the numeric position of the first occurrence of needle in the haystack string.**
+```php
+// We can search for the character, ignoring anything before the offset
+$newstring = 'abcdef abcdef';
+$pos = strpos($newstring, 'a', 1); // $pos = 7, not 0
+```
 ## Custom functions
 ### toCamelCase()
 ```php
