@@ -180,6 +180,10 @@ if (strncasecmp($var1, $var2, 5) === 0) {
 ```
 ### str_shuffle(string $string): string
 **self-descriptive**
+### chr(int $codepoint): string
+**self-descriptive**
+### ord(string $character): int
+**self-descriptive**
 ## Custom functions
 ### toCamelCase()
 ```php
