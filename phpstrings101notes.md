@@ -184,6 +184,8 @@ if (strncasecmp($var1, $var2, 5) === 0) {
 **self-descriptive**
 ### ord(string $character): int
 **self-descriptive**
+### nl2br(string $string, bool $use_xhtml = true): string
+**self-descriptive**
 ## Custom functions
 ### toCamelCase()
 ```php
